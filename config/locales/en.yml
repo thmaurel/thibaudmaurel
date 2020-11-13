@@ -30,4 +30,44 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  pages:
+    home:
+      tab:
+        about: About
+        portfolio: Portfolio
+        contact: Get in touch!
+      banner:
+        iam: I am
+        fullstack: a FullStack Developer
+        websitecreation: I build web applications
+        teacher: Teacher @
+      bio:
+        skills: "Skills:"
+        edu: "Experiences:"
+        school: Engineer Education
+        project: Managing IT Project
+        nz: New Zealand
+        whv: Working Holiday Visa year
+        bootcamp: Web Developer Bootcamp
+      lcv:
+        description: is the website of a floral accessories for weddings and beautiful moments shop
+        backend: "Back-end development:"
+        google: automating Google Drive export of sales datas.
+        cubyn: updating delivery status using Cubyn webhooks (delivery service)
+        tech: "Tech : Ruby on Rails, Cubyn API"
+      instyll:
+        description: is an app enabling to look for new look ideas based on your dressing. Looks are published by influencers and linked to the clothes they are made of.
+        backend: Back-end development.
+        tech: "Tech : Ruby on Rails, HTML, CSS, Javascript, Heroku, AWS S3"
+      mcv:
+        description: is a web-app enabling to pay holiday expenses (accomodation, meal..) replacing holiday vouchers by a credit card.
+        backend: Prototype development.
+        tech: "Tech : Ruby on Rails, HTML, CSS, Javascript Heroku"
+      topshot:
+        description: is a web-app enabling to share one's clothes and looks to other people to get their feedbacks. Swipe system to like or dislike.
+        backend: Prototype development.
+        tech: "Tech : Ruby on Rails, HTML, CSS, Javascript Heroku"
+      contact:
+        title: Get in touch!
+        button: Send
+        here: Here

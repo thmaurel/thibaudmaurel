@@ -1,2 +1,146 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="tabs">
+  <div class="tab tab-about animate__animated animate__fadeInLeft">
+    > <%= t('.tab.about') %>
+  </div>
+  <div class="tab tab-portfolio animate__animated animate__fadeInLeft">
+    > <%= t('.tab.portfolio') %>
+  </div>
+  <div class="tab tab-contact animate__animated animate__fadeInLeft">
+    > <%= t('.tab.contact') %>
+  </div>
+</div>
+<div class="my-container">
+<!--   <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+  <div class="flags">
+    <%= link_to "/" do %>
+      <%= image_tag 'france.svg', class: "flag #{"hidden-flag" if current_page?("/en")}" %>
+    <% end %>
+    <%= link_to root_path(locale: :en) do %>
+      <%= image_tag 'united-kingdom.svg', class: "flag #{"hidden-flag" unless current_page?("/en")}" %>
+    <% end %>
+  </div>
+  <div class="banner">
+    <%= image_tag 'profile.png', id: "profile-pic", class: "animate__animated animate__fadeIn" %>
+    <div class="banner-content">
+      <h1 class="page-title">> Thibaud Maurel</h1>
+      <h2 class="first-line">> <%= t('.banner.iam') %> <span class="blue"><%= t('.banner.fullstack') %></span></h2>
+      <h2 class="second-line">> <%= t('.banner.websitecreation') %></h2>
+      <h2 class="third-line">> <%= t('.banner.teacher') %><a href="https://www.lewagon.com/Paris">Le Wagon Paris</a></h2>
+      <div class="banner-cta">
+        <span class="link contact-link-fr" id="contact-link">> </span>
+      </div>
+    </div>
+  </div>
+  <div id="bio">
+    <div class="bio-part-1">
+      <%= image_tag "coding.jpg",  alt: "Computer picture", class: "bio-img" %>
+      <div class="bio-skills">
+        <h2>> <%= t('.bio.skills') %></h2>
+        <div><i class="fas fa-arrow-circle-right blue"></i> Ruby on Rails</div>
+        <div><i class="fas fa-arrow-circle-right blue"></i> HTML</div>
+        <div><i class="fas fa-arrow-circle-right blue"></i> CSS</div>
+        <div><i class="fas fa-arrow-circle-right blue"></i> Javascript</div>
+        <div><i class="fas fa-arrow-circle-right blue"></i> React</div>
+        <div><i class="fas fa-arrow-circle-right blue"></i> VBA (Excel)</div>
+      </div>
+    </div>
+    <div class="bio-part-2">
+      <h2>> <%= t('.bio.edu') %></h2>
+      <div>
+        <div class="bio-part-2-block">
+          <%= image_tag 'estb.jpg', class: "bio-part-2-img-square", alt: "logo Telecom Bretagne" %>
+          <div>
+            <p class="bio-part-2-title">2012 - 2015 : <span class="blue">Telecom Bretagne</span></p>
+            <p class="bio-part-2-desc"><em><%= t('.bio.school') %></em></p>
+          </div>
+        </div>
+        <div class="bio-part-2-block">
+          <%= image_tag 'bnpp.png', class: "bio-part-2-img-square", alt: "logo BNP Paribas" %>
+          <div>
+            <p class="bio-part-2-title">2016 - 2018 : <span class="blue">BNP Paribas</span></p>
+            <p class="bio-part-2-desc"><em><%= t('.bio.project') %></em></p>
+          </div>
+        </div>
+        <div class="bio-part-2-block">
+          <%= image_tag 'nz.jpg', alt: "logo Nouvelle-Zelande", class: "bio-part-2-img" %>
+          <div>
+            <p class="bio-part-2-title">2018 - 2019 : <span class="blue"><%= t('.bio.nz') %></span></p>
+            <p class="bio-part-2-desc"><em><%= t('.bio.whv') %></em></p>
+          </div>
+        </div>
+        <div class="bio-part-2-block">
+          <%= image_tag "lewagon.png", alt: "logo Le Wagon", class: "bio-part-2-img" %>
+          <div>
+            <p class="bio-part-2-title">Avril 2019 : <span class="blue">Le Wagon</span></p>
+            <p class="bio-part-2-desc"><em><%= t('.bio.bootcamp') %></em></p>
+          </div>
+        </div>
+        <div class="bio-part-2-block">
+          <%= image_tag 'mdf.jpg', alt: "logo Meilleur dev de France", class: "bio-part-2-img"  %>
+          <div>
+            <p class="bio-part-2-title">Octobre 2019 : <span class="blue">Prix GENIUS</span></p>
+            <p class="bio-part-2-desc"><em>"Meilleur Développeur de France 2019"</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="portfolio">
+    <div class="portfolio-block portfolio-block-1">
+      <%= image_tag 'couronnes.png', alt: "Maquette Les Couronnes de Victoire", class: "portfolio-img" %>
+      <div class="portfolio-desc">
+        <p><strong class="blue">Les Couronnes de Victoire</strong> <%= t('.lcv.description') %></p>
+        <p><%= t('.lcv.backend') %>
+          <ul><li><%= t('.lcv.google') %></li>
+          <li><%= t('.lcv.cubyn') %></li></ul></p>
+        <p><%= t('.lcv.tech') %></p>
+      </div>
+    </div>
+    <div class="portfolio-block portfolio-block-2">
+      <%= image_tag 'instyll.png', alt: "Maquette Instyll", class: "portfolio-img" %>
+      <div class="portfolio-desc">
+        <p><strong class="blue">InStyll</strong> <%= t('.instyll.description') %></p>
+        <p><%= t('.instyll.backend') %></p>
+        <p><%= t('.instyll.tech') %></p>
+      </div>
+    </div>
+    <div class="portfolio-block portfolio-block-3">
+      <%= image_tag 'mcv.png', alt: "Maquette Ma carte Vacances", class: "portfolio-img" %>
+      <div class="portfolio-desc">
+        <p><strong class="blue">MacarteVacances</strong> <%= t('.mcv.description') %></p>
+        <p><%= t('.mcv.backend') %></p>
+        <p><%= t('.mcv.tech') %></p>
+      </div>
+    </div>
+    <div class="portfolio-block portfolio-block-4">
+      <%= image_tag "topshot.png", alt: "Maquette TopShot", class: "portfolio-img" %>
+      <div class="portfolio-desc">
+        <p><strong class="blue">TopShot</strong> <%= t('.topshot.description') %></p>
+        <p><%= t('.topshot.backend') %></p>
+        <p><%= t('.topshot.tech') %></p>
+      </div>
+    </div>
+  </div>
+  <div id="contact">
+    <h2>> <%= t('.contact.title') %></h2>
+    <div class="contact-form">
+      <%= simple_form_for @message do |f| %>
+        <%= f.input :email, label: false, placeholder: "Email" %>
+        <%= f.input :content, label: false, placeholder: "Message" %>
+        <%= f.submit t('.contact.button'), id: "contact-form-submit" %>
+      <% end %>
+    </div>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/thibaudmaurel/">
+        <i class="fab fa-linkedin"></i> thibaudmaurel
+      </a>
+      <a href="mailto: maurel.thibaud@free.fr">
+        <i class="fas fa-at"></i> <%= t('.contact.here') %>
+      </a>
+      <a href="https://github.com/thmaurel">
+        <i class="fab fa-github"></i> thmaurel
+      </a>
+    </div>
+  </div>
+  <br>
+</div>

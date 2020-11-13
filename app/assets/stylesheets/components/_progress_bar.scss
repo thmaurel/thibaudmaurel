@@ -1,0 +1,27 @@
+.tabs {
+  position: fixed;
+  left: 0px;
+  bottom: 30px;
+  font-size: 24px;
+  height: 300px;
+}
+
+.tab {
+  border: 2px solid rgba(103,170,249, 0.7);
+  border-left: none;
+  padding: 10px 15px;
+  margin: 30px 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+  width: 280px;
+  display: none;
+  color: rgba(220, 220, 220, 0.7);
+  &:hover {
+    opacity: 1;
+    border: 2px solid rgb(103,170,249);
+    color: rgb(220, 220, 220);
+    border-left: none;
+  }
+}
+

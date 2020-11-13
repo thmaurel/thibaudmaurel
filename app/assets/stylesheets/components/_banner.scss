@@ -1,0 +1,55 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+}
+
+.banner-content {
+  h1 {
+    font-size: 56px;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  a {
+    color: #67AAF9;
+    opacity: 0.8;
+    text-decoration: underline;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.banner-desc {
+  width: 33%;
+}
+
+.banner-cta {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#profile-pic {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  margin-right: 150px;
+}
+
+#contact-link {
+  font-size: 30px;
+  color:#67AAF9;
+  border: 1px solid #67AAF9;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}

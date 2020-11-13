@@ -1,0 +1,42 @@
+fr:
+  pages:
+    home:
+      tab:
+        about: A propos
+        portfolio: Portfolio
+        contact: Contactez-moi !
+      banner:
+        iam: Je suis
+        fullstack: développeur FullStack
+        websitecreation: "Création de sites web"
+        teacher: Professeur @
+      bio:
+        skills: "Compétences :"
+        edu: "Parcours :"
+        school: Formation d'ingénieur généraliste
+        project: Gestion de projet informatique
+        nz: Nouvelle-Zélande
+        whv: Année en Working Holiday Visa
+        bootcamp: Bootcamp Développeur Web
+      lcv:
+        description: est le site d'une boutique d'accessoires fleuris pour mariage.
+        backend: "Développement back-office :"
+        google: automatisation de l'export des données sur un tableau de suivi Google-Drive
+        cubyn: actualisation des statuts en direct grâce à l'utilisation des webhooks de Cubyn (service de livraison)
+        tech: "Techno : Ruby on Rails, API Cubyn"
+      instyll:
+        description: est une application qui permet de trouver des nouvelles idées de look à partir de son dressing. Les looks sont publiés par des influenceuses et directement reliés aux vêtements qui les composent.
+        backend: Développement du back-office.
+        tech: "Techno : Ruby on Rails, HTML, CSS, Javascript, Heroku, AWS S3"
+      mcv:
+        description: est une application web qui permet de payer ses dépenses de vacances (hébergement, repas..) en remplaçant les chèques vacances par une carte.
+        backend: Développement d'un prototype.
+        tech: "Techno : Ruby on Rails, HTML, CSS, Javascript Heroku"
+      topshot:
+        description: est une application web qui permet de partager ses vêtements et looks à d'autres utilisateurs pour avoir leurs avis. Systême de likes en swipant.
+        backend: Développement d'un prototype.
+        tech: "Techno : Ruby on Rails, HTML, CSS, Javascript Heroku"
+      contact:
+        title: Contactez-moi !
+        button: Envoyez
+        here: Ici

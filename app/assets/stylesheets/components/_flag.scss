@@ -1,0 +1,14 @@
+.flag {
+  width: 50px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.hidden-flag {
+  opacity: 0.2;
+}
+
+.flags {
+  text-align: center;
+}

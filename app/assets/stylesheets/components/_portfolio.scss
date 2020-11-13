@@ -1,0 +1,20 @@
+.portfolio-block {
+  display:flex;
+  align-items: center;
+  padding: 100px 0;
+  border-top: 1px solid #67AAF9;
+  opacity: 0.1;
+}
+
+.portfolio-img {
+  width: 55%;
+  object-fit: cover;
+}
+
+.portfolio-desc {
+  width: 45%;
+}
+
+.portfolio-desc p {
+  text-align: justify;
+}
