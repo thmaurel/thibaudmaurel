@@ -26,3 +26,15 @@
   }
 }
 
+
+@media(max-width: 1700px) {
+  .tab {
+    width: 220px;
+  }
+}
+
+@media(max-width: 600px) {
+  .tabs {
+    display:none;
+  }
+}

@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
 }
 
+.mobile {
+  display: none;
+}
+
 @media(max-width: 1700px) {
   .my-container {
     width: 900px;
@@ -53,31 +57,19 @@ h1, h2, h3, h4, h5, h6 {
   body {
     font-size: 18px;
   }
-
-  .banner-content {
-    h1 {
-      font-size: 40px;
-    }
-    h2 {
-      font-size: 24px;
-    }
-  }
-
-  #contact-link {
-    font-size: 24px;
-  }
-
-  #bio {
-    font-size: 24px;
-    h2 {
-      font-size: 40px;
-    }
-  }
-
-  .tab {
-    width: 220px;
-  }
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 600px) {
+  .my-container {
+    width: 100vw;
+    padding: 0 5px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
 }

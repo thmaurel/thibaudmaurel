@@ -53,3 +53,30 @@
     opacity: 1;
   }
 }
+
+@media(max-width: 1700px) {
+  .banner-content {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  #contact-link {
+    font-size: 24px;
+  }
+}
+
+@media(max-width: 600px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  #profile-pic {
+    height: 50vw;
+    width: 50vw;
+    margin: 20px 0;
+  }
+}

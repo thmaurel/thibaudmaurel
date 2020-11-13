@@ -72,3 +72,43 @@
 .bio-part-2-desc {
   margin-top: 0;
 }
+
+
+@media(max-width: 1700px) {
+  #bio {
+    font-size: 24px;
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .bio-part-1 {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+
+  .bio-part-2 {
+    padding: 50px 0;
+  }
+
+  .bio-img {
+    width: 50vw;
+    height: 50vw;
+    margin-bottom: 50px;
+  }
+
+  .bio-part-2-img, .bio-part-2-img-square {
+    width: 13vw;
+    height: 13vw;
+    margin: 0 15px;
+  }
+
+  #bio {
+    font-size: 18px;
+    h2 {
+      font-size: 32px;
+    }
+  }
+}

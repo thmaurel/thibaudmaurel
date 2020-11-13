@@ -60,7 +60,22 @@
   a {
     color: rgb(220, 220, 220);
   }
-  i {
-    // font-size: 48px;
+}
+
+@media(max-width: 600px) {
+  .contact-form {
+    width: 90%;
+  }
+
+  #contact {
+    padding: 50px 0;
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  .contact-links {
+    width: 90%;
+    font-size: 18px
   }
 }
