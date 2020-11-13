@@ -13,3 +13,34 @@
 @import "pages/index";
 
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  background-color: rgb(35, 35, 35);
+  color: rgb(220, 220, 220);
+  font-family: 'Courier Prime', monospace;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin: 25px 0;
+/*  letter-spacing: 1px;*/
+}
+
+.blue {
+  color: #67AAF9;
+}
+
+.my-container {
+  width: 1200px;
+  margin: auto;
+}
