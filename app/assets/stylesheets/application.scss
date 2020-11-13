@@ -44,3 +44,40 @@ h1, h2, h3, h4, h5, h6 {
   width: 1200px;
   margin: auto;
 }
+
+@media(max-width: 1700px) {
+  .my-container {
+    width: 900px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .banner-content {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  #contact-link {
+    font-size: 24px;
+  }
+
+  #bio {
+    font-size: 24px;
+    h2 {
+      font-size: 40px;
+    }
+  }
+
+  .tab {
+    width: 220px;
+  }
+}
+
+@media(max-width: 1200px) {
+}
