@@ -3,10 +3,12 @@
   left: 0px;
   bottom: 30px;
   height: 300px;
+  z-index: 5;
 }
 
 .tab {
   border: 2px solid rgba(103,170,249, 0.7);
+  background-color: rgb(35, 35, 35);
   border-left: none;
   padding: 10px 15px;
   margin: 30px 0;
