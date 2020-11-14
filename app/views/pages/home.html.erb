@@ -23,7 +23,8 @@
     <%= image_tag 'profile.png', id: "profile-pic", class: "animate__animated animate__fadeIn" %>
     <div class="banner-content">
       <h1 class="page-title">> Thibaud Maurel</h1>
-      <h2 class="first-line"><%= t('.banner.iam') %> <span class="blue"><%= t('.banner.fullstack') %></span></h2>
+      <h2 class="first-line desktop"><%= t('.banner.iam') %> <span class="blue"><%= t('.banner.fullstack') %></span></h2>
+      <h2 class="first-line mobile"><%= t('.banner.fullstack').capitalize %></h2>
       <h2 class="second-line"><%= t('.banner.websitecreation') %></h2>
       <h2 class="third-line"><%= t('.banner.teacher') %><a href="https://www.lewagon.com/Paris">Le Wagon Paris</a></h2>
       <div class="banner-cta">
@@ -92,6 +93,7 @@
   </div>
   <div id="portfolio">
     <div class="portfolio-block portfolio-block-1">
+      <h2 class="mobile">Les Couronnes de Victoire</h2>
       <%= image_tag 'couronnes.png', alt: "Maquette Les Couronnes de Victoire", class: "portfolio-img" %>
       <div class="portfolio-desc">
         <p><strong class="blue">Les Couronnes de Victoire</strong> <%= t('.lcv.description') %></p>
@@ -102,6 +104,7 @@
       </div>
     </div>
     <div class="portfolio-block portfolio-block-2">
+      <h2 class="mobile">Instyll</h2>
       <%= image_tag 'instyll.png', alt: "Maquette Instyll", class: "portfolio-img" %>
       <div class="portfolio-desc">
         <p><strong class="blue">InStyll</strong> <%= t('.instyll.description') %></p>
@@ -110,14 +113,16 @@
       </div>
     </div>
     <div class="portfolio-block portfolio-block-3">
+      <h2 class="mobile">Ma carte Vacances</h2>
       <%= image_tag 'mcv.png', alt: "Maquette Ma carte Vacances", class: "portfolio-img" %>
       <div class="portfolio-desc">
-        <p><strong class="blue">MacarteVacances</strong> <%= t('.mcv.description') %></p>
+        <p><strong class="blue">Ma carte Vacances</strong> <%= t('.mcv.description') %></p>
         <p><%= t('.mcv.backend') %></p>
         <p><%= t('.mcv.tech') %></p>
       </div>
     </div>
     <div class="portfolio-block portfolio-block-4">
+      <h2 class="mobile">TopShot</h2>
       <%= image_tag "topshot.png", alt: "Maquette TopShot", class: "portfolio-img" %>
       <div class="portfolio-desc">
         <p><strong class="blue">TopShot</strong> <%= t('.topshot.description') %></p>
