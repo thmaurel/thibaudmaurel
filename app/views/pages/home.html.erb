@@ -94,7 +94,9 @@
   <div id="portfolio">
     <div class="portfolio-block portfolio-block-1">
       <h2 class="mobile">Les Couronnes de Victoire</h2>
-      <%= image_tag 'couronnes.png', alt: "Maquette Les Couronnes de Victoire", class: "portfolio-img" %>
+      <a href="https://www.lescouronnesdevictoire.com/" target="_blank" class="portfolio-img-link">
+        <%= image_tag 'couronnes.png', alt: "Maquette Les Couronnes de Victoire", class: "portfolio-img" %>
+      </a>
       <div class="portfolio-desc">
         <p><strong class="blue">Les Couronnes de Victoire</strong> <%= t('.lcv.description') %></p>
         <p><%= t('.lcv.backend') %>
@@ -105,7 +107,9 @@
     </div>
     <div class="portfolio-block portfolio-block-2">
       <h2 class="mobile">Instyll</h2>
-      <%= image_tag 'instyll.png', alt: "Maquette Instyll", class: "portfolio-img" %>
+      <a href="https://www.instyll.co/" target="_blank" class="portfolio-img-link">
+        <%= image_tag 'instyll.png', alt: "Maquette Instyll", class: "portfolio-img" %>
+      </a>
       <div class="portfolio-desc">
         <p><strong class="blue">InStyll</strong> <%= t('.instyll.description') %></p>
         <p><%= t('.instyll.backend') %></p>
@@ -114,7 +118,9 @@
     </div>
     <div class="portfolio-block portfolio-block-3">
       <h2 class="mobile">Ma carte Vacances</h2>
-      <%= image_tag 'mcv.png', alt: "Maquette Ma carte Vacances", class: "portfolio-img" %>
+      <div class="portfolio-img-link">
+        <%= image_tag 'mcv.png', alt: "Maquette Ma carte Vacances", class: "portfolio-img" %>
+      </div>
       <div class="portfolio-desc">
         <p><strong class="blue">Ma carte Vacances</strong> <%= t('.mcv.description') %></p>
         <p><%= t('.mcv.backend') %></p>
@@ -123,7 +129,9 @@
     </div>
     <div class="portfolio-block portfolio-block-4">
       <h2 class="mobile">TopShot</h2>
-      <%= image_tag "topshot.png", alt: "Maquette TopShot", class: "portfolio-img" %>
+      <div class="portfolio-img-link">
+        <%= image_tag "topshot.png", alt: "Maquette TopShot", class: "portfolio-img" %>
+      </div>
       <div class="portfolio-desc">
         <p><strong class="blue">TopShot</strong> <%= t('.topshot.description') %></p>
         <p><%= t('.topshot.backend') %></p>
