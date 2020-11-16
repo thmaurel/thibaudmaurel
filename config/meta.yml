@@ -1,0 +1,5 @@
+meta_product_name: "Thibaud Maurel"
+meta_title: "Thibaud Maurel - Développeur web"
+meta_description: "Création de site web et développement de web-app"
+meta_image: "og_image.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
